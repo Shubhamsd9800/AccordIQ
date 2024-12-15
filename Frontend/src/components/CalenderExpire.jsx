@@ -14,7 +14,7 @@ const CalenderExpire = () => {
         <div className="flex space-x-3">
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-full group bg-gradient-to-br from-purple-600 to-blue-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
             <span className="relative px-3 py-2 transition-all ease-in duration-75 bg-white text-sm text-gray-900 rounded-full group-hover:bg-gray-100 flex items-center gap-2">
-              MonthlyHello <img src={Doward} className="w-5" alt="" />
+              Monthly <img src={Doward} className="w-5" alt="" />
             </span>
           </button>
 
@@ -68,50 +68,51 @@ const CalenderExpire = () => {
         </div>
 
         {/* Upcoming Events Section */}
-        <div className="flex-1">
-          {/* Header */}
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-bold">Upcoming Expirations</h2>
-          </div>
+        <div className="flex-1 w-full sm:w-auto">
+  {/* Header */}
+  <div className="flex justify-between items-center mb-4">
+    <h2 className="text-lg font-bold">Upcoming Expirations</h2>
+  </div>
 
-          {/* Scrollable List */}
-          <div className="h-64 overflow-y-auto space-y-2 pr-2 border-b-2 border-gray-300">
-            {[
-              { month: "January 2024", count: 1 },
-              { month: "March 2024", count: 5 },
-              { month: "July 2024", count: 7 },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="flex justify-between items-center bg-blue-50 p-3 rounded-lg shadow-sm"
-              >
-                <span className="text-sm font-medium">{item.month}</span>
-                <span className="bg-teal-600 text-white text-sm font-bold w-6 h-6 flex items-center justify-center rounded-full">
-                  {item.count}
-                </span>
-              </div>
-            ))}
-            <h2 className="text-[1rem] font-normal mt-6">Upcoming Renewals</h2>
-            <div className="h-64 overflow-y-auto space-y-2 pr-2">
-              {[
-                { month: "January 2024", count: 5 },
-                { month: "April 2024", count: 8 },
-                { month: "August 2024", count: 2 },
-                { month: "August 2024", count: 2 },
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="flex justify-between items-center bg-blue-50 p-3 rounded-lg shadow-sm"
-                >
-                  <span className="text-sm font-medium">{item.month}</span>
-                  <span className="bg-teal-600 text-white text-sm font-bold w-6 h-6 flex items-center justify-center rounded-full">
-                    {item.count}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+  {/* Scrollable List */}
+  <div className="h-64 overflow-y-auto space-y-2 pr-2 border-b-2 border-gray-300">
+    {[
+      { month: "January 2024", count: 1 },
+      { month: "March 2024", count: 5 },
+      { month: "July 2024", count: 7 },
+    ].map((item, index) => (
+      <div
+        key={index}
+        className="flex justify-between items-center bg-blue-50 p-3 rounded-lg shadow-sm"
+      >
+        <span className="text-sm font-medium">{item.month}</span>
+        <span className="bg-teal-600 text-white text-sm font-bold w-6 h-6 flex items-center justify-center rounded-full">
+          {item.count}
+        </span>
+      </div>
+    ))}
+    <h2 className="text-[1rem] font-normal mt-6">Upcoming Renewals</h2>
+    <div className="h-64 overflow-y-auto space-y-2 pr-2">
+      {[
+        { month: "January 2024", count: 5 },
+        { month: "April 2024", count: 8 },
+        { month: "August 2024", count: 2 },
+        { month: "August 2024", count: 2 },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="flex justify-between items-center bg-blue-50 p-3 rounded-lg shadow-sm"
+        >
+          <span className="text-sm font-medium">{item.month}</span>
+          <span className="bg-teal-600 text-white text-sm font-bold w-6 h-6 flex items-center justify-center rounded-full">
+            {item.count}
+          </span>
         </div>
+      ))}
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

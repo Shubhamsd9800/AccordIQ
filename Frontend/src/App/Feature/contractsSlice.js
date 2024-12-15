@@ -16,7 +16,6 @@ export const fetchContracts = createAsyncThunk(
     return data;
   }
 );
-
 const contractsSlice = createSlice({
   name: "contracts",
   initialState: {

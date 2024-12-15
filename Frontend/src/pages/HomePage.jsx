@@ -15,7 +15,7 @@ const HomePage = () => {
       <div className="w-full lg:ml-2">
         <Navbar />
         <div className="w-full p-2 flex flex-col lg:flex-row flex-wrap gap-4">
-          <div className="space-y-4 w-full lg:w-auto flex flex-col sm:flex-row sm:space-y-0 sm:space-x-4 lg:flex-col lg:space-x-0 lg:space-y-4 ml-2 md:ml-16">
+          <div className="space-y-4 w-full lg:w-auto flex flex-col sm:flex-row sm:space-y-0 sm:space-x-4 lg:flex-col lg:space-x-0 lg:space-y-4 md:ml-16">
             <InfoCard title="Contract Value" value="$2.58B" subtitle="No. of contracts - 2.1K" />
             <InfoCard title="Total Contracts" value="2,034" />
             <InfoCard title="Under Review" value="50" />
