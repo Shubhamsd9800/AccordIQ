@@ -57,9 +57,7 @@ function Navbar() {
                 </div>
 
                 <div className="hidden md:flex items-center space-x-4">
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                        + Upload
-                    </button>
+                <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">+ Upload</button>
                     <BellIcon className="w-6 h-6 text-gray-500" />
                     <CheckCircleIcon className="w-6 h-6 text-gray-500" />
                     <img src={Photo} alt="User" className="w-8 h-8 rounded-full" />
@@ -79,9 +77,7 @@ function Navbar() {
 
             {isDropdownOpen && (
                 <div className="mt-2 py-2 bg-white rounded-md shadow-lg md:hidden">
-                    <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                        + Upload
-                    </button>
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">+ Upload</button>
                     <button className="flex items-center w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                         <BellIcon className="w-5 h-5 mr-2" /> Notifications
                     </button>
