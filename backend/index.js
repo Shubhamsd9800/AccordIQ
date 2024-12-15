@@ -7,7 +7,7 @@ const cors = require("cors");
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: 'https://accord-iq-dev.vercel.app/', // Update with your frontend URL
+  origin: ['https://accord-iq-dev.vercel.app', 'https://accord-iq-back.vercel.app'],
   credentials: true,
 }));
 
