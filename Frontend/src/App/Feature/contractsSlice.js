@@ -4,7 +4,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchContracts = createAsyncThunk(
   "contracts/fetchContracts",
   async () => {
-    const response = await fetch("http://localhost:5000/api/documents");
+    const response = await fetch("http://localhost:5000/");
 
     // Check for response errors
     if (!response.ok) {

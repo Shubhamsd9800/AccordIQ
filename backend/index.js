@@ -11,7 +11,7 @@ app.use(cors({
 }));
 
 // all doc
-app.get('/api/documents', (req, res) => {
+app.get('/', (req, res) => {
     res.json(documents);
   });
 
