@@ -4,7 +4,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchContracts = createAsyncThunk(
   "contracts/fetchContracts",
   async () => {
-    const response = await fetch("https://accord-iq-backend.vercel.app/api/documents");
+    const response = await fetch("https://accord-iq-back.vercel.app/api/documents/");
 
     // Check for response errors
     if (!response.ok) {
