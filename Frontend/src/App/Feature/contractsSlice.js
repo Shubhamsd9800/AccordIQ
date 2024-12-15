@@ -4,9 +4,10 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const fetchContracts = createAsyncThunk(
   "contracts/fetchContracts",
   async () => {
-    const response = await fetch("https://accord-iq-back.vercel.app/api/documents/");
+    const response = await fetch("https://accord-iq-back.vercel.app/api/documents/", {
+      credentials: 'include'
+    });
 
-    // Check for response errors
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -15,7 +16,6 @@ export const fetchContracts = createAsyncThunk(
     return data;
   }
 );
-
 const contractsSlice = createSlice({
   name: "contracts",
   initialState: {
